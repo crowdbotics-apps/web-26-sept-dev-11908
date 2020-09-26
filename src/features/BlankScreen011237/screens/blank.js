@@ -23,10 +23,12 @@ export class __Blank extends React.Component {
   render = () => (
     <View style={this.props.themedStyle.View_1}>
       <Text style={this.props.themedStyle.Text_2}>Sample text content</Text>
+      <Text style={this.props.themedStyle.Text_3}>
+        Sample text content asdf asdf asdf sdf asf asdf sdf asdf asdf sdf sd
+      </Text>
     </View>
   )
 }
-
 _Blank = withStyles(__Blank, theme => ({
   View_1: {
     marginLeft: 0,
@@ -87,9 +89,38 @@ _Blank = withStyles(__Blank, theme => ({
     textTransform: "none",
     lineHeight: 12,
     letterSpacing: 0
+  },
+  Text_3: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 }))
-
 function mapStateToProps(state) {
   return { state: state }
 }
